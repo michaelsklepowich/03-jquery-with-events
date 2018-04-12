@@ -15,8 +15,12 @@ HTML, CSS, and JavaScript. The jQuery library was also loaded.
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+04-12-2018 9:00am - Lab was posted with starter code.
+04-12-2018 10:00am - articleView.populateFilters() was completed;
+04-12-2018 11:00am - articleView.handleAuthorFilter() was completed;
+04-12-2018 12:00pm - articleView.handleCategoryFilter() was completed;
+04-12-2018 1:00pm - articleView.handleMainNav() was completed;
+04-12-2018 1:30pm - articleView.setTeasers() was completed;
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+Code Fellows instructors and TAs, jQuery documentation, and various other sources from Google.
