@@ -27,7 +27,7 @@ articleView.populateFilters = function () {
 
       // TODO: DONE Refactor this concatenation using a template literal.
       optionTag = `<option value="${category}">${category}</option>`;
-
+      // console.log(optionTag);
       if ($('#category-filter option[value="' + category + '"]').length === 0) {
         $('#category-filter').append(optionTag);
       }
@@ -60,9 +60,22 @@ articleView.handleCategoryFilter = function () {
   // When an option with a value is selected, hide all the articles, then reveal the matches.
   // When the blank (default) option is selected, show all the articles, except for the template.
   // Be sure to reset the #author-filter while you are at it!
+  $('#category-filter').on('change', function () {
+    if ($(this).val()) {
 
+      $('article').hide();
+      $(`article[data-category="${$(this).val()}"]`).fadeIn(200);
+
+
+
+    } else {
+
+      $('article').fadeIn(200);
+      $('.template').hide();
+    }
+    $('#author-filter').val('');
+  });
 };
-
 articleView.handleMainNav = function () {
   // TODO: Add an event handler to .main-nav elements that will power the Tabs feature.
   // Clicking any .tab element should hide all the .tab-content sections, and then reveal the single .tab-content section that is associated with the clicked .tab element.
