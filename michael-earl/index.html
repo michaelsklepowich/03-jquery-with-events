@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Lab 3</title>
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
 </head>
+
 <body>
   <header class="site-header clearfix">
     <section class="heading-group-h1">
@@ -22,10 +24,18 @@
     <nav class="main-nav">
       <div class="icon-menu"></div>
       <ul>
-        <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
-        <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-        <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-        <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+        <li class="tab" data-content="articles">
+          <a href="#" class="icon-home"> Home</a>
+        </li>
+        <li class="tab" data-content="about">
+          <a href="#" class="icon-address-book"> About</a>
+        </li>
+        <li>
+          <a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a>
+        </li>
+        <li>
+          <a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -49,8 +59,12 @@
         <header>
           <h1>Title</h1>
           <div class="byline">
-            By <address><a href="">Author Name</a></address>
-            published <time pubdate datetime="2000-01-01">Publish Time</time>
+            By
+            <address>
+              <a href="">Author Name</a>
+            </address>
+            published
+            <time pubdate datetime="2000-01-01">Publish Time</time>
           </div>
         </header>
         <section class="article-body"></section>
@@ -80,6 +94,7 @@
   <script src="scripts/articleView.js"></script>
 
   <!-- COMMENT: Explain the ordering of your script files. -->
-  <!-- PUT YOUR RESPONSE HERE -->
+  <!-- The jQuery file is necessary because all of the other JS files rely on it. Blog articles file contains all the of the articles as objects. The article and article view rely on the articles being available. The article view needs to be after the article file because the article needs to exist before a view can be configured. -->
 </body>
+
 </html>
